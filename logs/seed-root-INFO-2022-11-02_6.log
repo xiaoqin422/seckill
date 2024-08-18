@@ -1,0 +1,24 @@
+18:26:20.226 [main] INFO  com.study.seckill.SeckillWebApplication - Starting SeckillWebApplication on QXX_01 with PID 16408 (D:\Code\IDEA\project\seckill\seckill-web\target\classes started by 25789 in D:\Code\IDEA\project\seckill)
+18:26:20.243 [main] INFO  com.study.seckill.SeckillWebApplication - No active profile set, falling back to default profiles: default
+18:26:21.331 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+18:26:21.336 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+18:26:21.337 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.16]
+18:26:21.342 [main] INFO  org.apache.catalina.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Environment\Java\jdk1.8\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;D:\Software\VMware\bin\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;D:\Environment\Java\jdk1.8\bin;D:\Environment\Go\go1.19.3\bin;C:\Program Files\dotnet\;D:\Environment\Software\Git\cmd;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;D:\Environment\Software\Xshell\;C:\Users\25789\AppData\Local\Microsoft\WindowsApps;;D:\Environment\Software\IntelliJ IDEA\bin;;C:\Users\25789\go\bin;.]
+18:26:21.422 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+18:26:21.995 [main] INFO  org.redisson.Version - Redisson 3.5.0
+18:26:23.166 [redisson-netty-4-24] INFO  org.redisson.connection.pool.MasterConnectionPool - 10 connections initialized for /127.0.0.1:6379
+18:26:23.166 [redisson-netty-4-10] INFO  org.redisson.connection.pool.MasterPubSubConnectionPool - 1 connections initialized for /127.0.0.1:6379
+18:26:28.634 [main] INFO  org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer - running container: DefaultRocketMQListenerContainer{consumerGroup='GID_order', nameServer='101.201.31.118:9876', topic='seckill', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='order', messageModel=CLUSTERING}
+18:26:28.634 [main] INFO  org.apache.rocketmq.spring.autoconfigure.ListenerContainerConfiguration - Register the listener to container, listenerBeanName:orderListener, containerBeanName:org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer_1
+18:26:29.727 [main] INFO  org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer - running container: DefaultRocketMQListenerContainer{consumerGroup='GID_del_cache', nameServer='101.201.31.118:9876', topic='seckill', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='delCache', messageModel=CLUSTERING}
+18:26:29.728 [main] INFO  org.apache.rocketmq.spring.autoconfigure.ListenerContainerConfiguration - Register the listener to container, listenerBeanName:delCacheListener, containerBeanName:org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer_2
+18:26:29.748 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+18:26:29.762 [main] INFO  com.study.seckill.SeckillWebApplication - Started SeckillWebApplication in 9.986 seconds (JVM running for 11.591)
+18:26:32.564 [Thread-33] INFO  org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer - container destroyed, DefaultRocketMQListenerContainer{consumerGroup='GID_del_cache', nameServer='101.201.31.118:9876', topic='seckill', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='delCache', messageModel=CLUSTERING}
+18:26:32.565 [Thread-33] INFO  org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer - container destroyed, DefaultRocketMQListenerContainer{consumerGroup='GID_order', nameServer='101.201.31.118:9876', topic='seckill', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='order', messageModel=CLUSTERING}
+18:26:32.616 [NettyClientSelector_1] INFO  RocketmqRemoting - closeChannel: close the connection to remote address[101.201.31.118:10911] result: true
+18:26:32.619 [NettyClientSelector_1] INFO  RocketmqRemoting - closeChannel: close the connection to remote address[101.201.31.118:9876] result: true
+18:26:32.670 [NettyClientSelector_1] INFO  RocketmqRemoting - closeChannel: close the connection to remote address[101.201.31.118:10911] result: true
+18:26:32.670 [NettyClientSelector_1] INFO  RocketmqRemoting - closeChannel: close the connection to remote address[101.201.31.118:9876] result: true
+18:26:34.921 [Thread-33] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+18:26:34.928 [Thread-33] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

@@ -1,0 +1,4 @@
+**/target/
+/seckill-web/target/
+*.log
+**/logs/

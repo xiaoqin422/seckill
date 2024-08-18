@@ -1,0 +1,1094 @@
+02:02:16.804 [main] INFO  com.study.seckill.SeckillWebApplication - Starting SeckillWebApplication on QXX with PID 15792 (D:\Code\IDEA\project\seckill\seckill-web\target\classes started by 秦笑笑L in D:\Code\IDEA\project\seckill)
+02:02:16.826 [main] DEBUG com.study.seckill.SeckillWebApplication - Running with Spring Boot v2.1.3.RELEASE, Spring v5.1.5.RELEASE
+02:02:16.827 [main] INFO  com.study.seckill.SeckillWebApplication - No active profile set, falling back to default profiles: default
+02:02:18.015 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8091"]
+02:02:18.019 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+02:02:18.021 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.16]
+02:02:18.025 [main] INFO  org.apache.catalina.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Environment\Java\jdk1.8\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;D:\Software\VMware\bin\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;D:\Environment\Java\jdk1.8\bin;D:\Environment\Go\go1.19.3\bin;C:\Program Files\dotnet\;D:\Environment\Software\Git\cmd;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;D:\Environment\Software\Xshell\;D:\Environment\Java\maven-3.8.1\bin;C:\Users\25789\AppData\Local\Microsoft\WindowsApps;;D:\Environment\Software\IntelliJ IDEA\bin;;C:\Users\25789\go\bin;D:\Environment\Software\GoLand 2022.2.4\bin;;.]
+02:02:18.106 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+02:02:18.214 [main] DEBUG com.zaxxer.hikari.HikariConfig - Driver class com.mysql.cj.jdbc.Driver found in Thread context class loader sun.misc.Launcher$AppClassLoader@18b4aac2
+02:02:18.230 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+02:02:18.266 [main] DEBUG org.apache.ibatis.io.VFS - Using VFS adapter org.mybatis.spring.boot.autoconfigure.SpringBootVFS
+02:02:18.268 [main] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.study.seckill.model.Demo matches criteria [is assignable to Object]
+02:02:18.269 [main] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.study.seckill.model.SeckillAdmin matches criteria [is assignable to Object]
+02:02:18.269 [main] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.study.seckill.model.SeckillOrder matches criteria [is assignable to Object]
+02:02:18.270 [main] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.study.seckill.model.SeckillProducts matches criteria [is assignable to Object]
+02:02:18.270 [main] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.study.seckill.model.SeckillUser matches criteria [is assignable to Object]
+02:02:18.270 [main] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.study.seckill.model.SsoUser matches criteria [is assignable to Object]
+02:02:18.270 [main] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.study.seckill.model.enums.MqNodesEnum matches criteria [is assignable to Object]
+02:02:18.271 [main] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.study.seckill.model.http.SeckillReq matches criteria [is assignable to Object]
+02:02:18.271 [main] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.study.seckill.model.http.SeckillReqV2 matches criteria [is assignable to Object]
+02:02:18.271 [main] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.study.seckill.model.http.SeckillReqV3 matches criteria [is assignable to Object]
+02:02:18.272 [main] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.study.seckill.model.http.UserReq$BaseEmailUserInfo matches criteria [is assignable to Object]
+02:02:18.272 [main] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.study.seckill.model.http.UserReq$BasePhoneUserInfo matches criteria [is assignable to Object]
+02:02:18.273 [main] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.study.seckill.model.http.UserReq$LoginUserEmailInfo matches criteria [is assignable to Object]
+02:02:18.273 [main] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.study.seckill.model.http.UserReq$LoginUserPhoneInfo matches criteria [is assignable to Object]
+02:02:18.274 [main] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.study.seckill.model.http.UserReq$SensEmailCodeReqInfo matches criteria [is assignable to Object]
+02:02:18.274 [main] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.study.seckill.model.http.UserReq$SensPhoneCodeReqInfo matches criteria [is assignable to Object]
+02:02:18.275 [main] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.study.seckill.model.http.UserReq matches criteria [is assignable to Object]
+02:02:18.276 [main] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.study.seckill.model.http.UserResp$BaseUserResp matches criteria [is assignable to Object]
+02:02:18.276 [main] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.study.seckill.model.http.UserResp matches criteria [is assignable to Object]
+02:02:18.276 [main] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.study.seckill.model.http.mq.SendMsgReq$DelCacheReq matches criteria [is assignable to Object]
+02:02:18.277 [main] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.study.seckill.model.http.mq.SendMsgReq$OrderReq matches criteria [is assignable to Object]
+02:02:18.277 [main] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.study.seckill.model.http.mq.SendMsgReq matches criteria [is assignable to Object]
+02:02:18.277 [main] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.study.seckill.model.vo.ImageCodeModel matches criteria [is assignable to Object]
+02:02:18.423 [main] DEBUG io.netty.util.internal.logging.InternalLoggerFactory - Using SLF4J as the default logging framework
+02:02:18.426 [main] DEBUG io.lettuce.core.resource.DefaultClientResources - -Dio.netty.eventLoopThreads: 12
+02:02:18.433 [main] DEBUG io.lettuce.core.resource.DefaultEventLoopGroupProvider - Creating executor io.netty.util.concurrent.DefaultEventExecutorGroup
+02:02:18.456 [main] DEBUG io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.level: simple
+02:02:18.456 [main] DEBUG io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.targetRecords: 4
+02:02:18.460 [main] DEBUG io.netty.util.internal.PlatformDependent - Platform: Windows
+02:02:18.461 [main] DEBUG io.netty.util.internal.PlatformDependent0 - -Dio.netty.noUnsafe: false
+02:02:18.462 [main] DEBUG io.netty.util.internal.PlatformDependent0 - Java version: 8
+02:02:18.463 [main] DEBUG io.netty.util.internal.PlatformDependent0 - sun.misc.Unsafe.theUnsafe: available
+02:02:18.464 [main] DEBUG io.netty.util.internal.PlatformDependent0 - sun.misc.Unsafe.copyMemory: available
+02:02:18.464 [main] DEBUG io.netty.util.internal.PlatformDependent0 - java.nio.Buffer.address: available
+02:02:18.465 [main] DEBUG io.netty.util.internal.PlatformDependent0 - direct buffer constructor: available
+02:02:18.465 [main] DEBUG io.netty.util.internal.PlatformDependent0 - java.nio.Bits.unaligned: available, true
+02:02:18.465 [main] DEBUG io.netty.util.internal.PlatformDependent0 - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9
+02:02:18.465 [main] DEBUG io.netty.util.internal.PlatformDependent0 - java.nio.DirectByteBuffer.<init>(long, int): available
+02:02:18.465 [main] DEBUG io.netty.util.internal.PlatformDependent - sun.misc.Unsafe: available
+02:02:18.466 [main] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.tmpdir: C:\Users\25789\AppData\Local\Temp (java.io.tmpdir)
+02:02:18.466 [main] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+02:02:18.467 [main] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.maxDirectMemory: 3786407936 bytes
+02:02:18.467 [main] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+02:02:18.469 [main] DEBUG io.netty.util.internal.CleanerJava6 - java.nio.ByteBuffer.cleaner(): available
+02:02:18.469 [main] DEBUG io.netty.util.internal.PlatformDependent - -Dio.netty.noPreferDirect: false
+02:02:18.469 [main] DEBUG io.netty.util.ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@467b684d
+02:02:18.471 [main] DEBUG io.netty.util.internal.PlatformDependent - org.jctools-core.MpscChunkedArrayQueue: available
+02:02:18.482 [main] DEBUG reactor.util.Loggers$LoggerFactory - Using Slf4j logging framework
+02:02:18.496 [main] DEBUG reactor.core.publisher.UnsafeSupport - Starting UnsafeSupport init in Java 1.8
+02:02:18.497 [main] DEBUG reactor.core.publisher.UnsafeSupport - Unsafe is available
+02:02:18.502 [main] DEBUG io.lettuce.core.resource.DefaultClientResources - LatencyUtils/HdrUtils are not available, metrics are disabled
+02:02:18.537 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.numHeapArenas: 24
+02:02:18.537 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.numDirectArenas: 24
+02:02:18.537 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.pageSize: 8192
+02:02:18.537 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxOrder: 11
+02:02:18.537 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.chunkSize: 16777216
+02:02:18.537 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.tinyCacheSize: 512
+02:02:18.537 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.smallCacheSize: 256
+02:02:18.537 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.normalCacheSize: 64
+02:02:18.537 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+02:02:18.537 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.cacheTrimInterval: 8192
+02:02:18.538 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.useCacheForAllThreads: true
+02:02:18.538 [main] DEBUG io.netty.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+02:02:18.541 [main] DEBUG io.netty.util.internal.InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+02:02:18.541 [main] DEBUG io.netty.util.internal.InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+02:02:18.714 [main] INFO  org.redisson.Version - Redisson 3.5.0
+02:02:18.716 [main] DEBUG io.netty.channel.MultithreadEventLoopGroup - -Dio.netty.eventLoopThreads: 24
+02:02:18.719 [main] DEBUG io.netty.channel.nio.NioEventLoop - -Dio.netty.noKeySetOptimization: false
+02:02:18.719 [main] DEBUG io.netty.channel.nio.NioEventLoop - -Dio.netty.selectorAutoRebuildThreshold: 512
+02:02:18.785 [main] DEBUG io.netty.channel.DefaultChannelId - -Dio.netty.processId: 15792 (auto-detected)
+02:02:18.786 [main] DEBUG io.netty.util.NetUtil - -Djava.net.preferIPv4Stack: false
+02:02:18.786 [main] DEBUG io.netty.util.NetUtil - -Djava.net.preferIPv6Addresses: false
+02:02:19.204 [main] DEBUG io.netty.util.NetUtil - Loopback interface: [lo, Software Loopback Interface 1, 127.0.0.1] ([lo, Software Loopback Interface 1, 127.0.0.1], {})
+02:02:19.205 [main] DEBUG io.netty.util.NetUtil - Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200
+02:02:19.663 [main] DEBUG io.netty.channel.DefaultChannelId - -Dio.netty.machineId: 00:50:56:ff:fe:c0:00:08 (auto-detected)
+02:02:19.677 [main] DEBUG io.netty.buffer.ByteBufUtil - -Dio.netty.allocator.type: pooled
+02:02:19.678 [main] DEBUG io.netty.buffer.ByteBufUtil - -Dio.netty.threadLocalDirectBufferSize: 0
+02:02:19.678 [main] DEBUG io.netty.buffer.ByteBufUtil - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+02:02:19.732 [redisson-netty-4-6] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.maxCapacityPerThread: 4096
+02:02:19.732 [redisson-netty-4-6] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.maxSharedCapacityFactor: 2
+02:02:19.732 [redisson-netty-4-6] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.linkCapacity: 16
+02:02:19.732 [redisson-netty-4-6] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.ratio: 8
+02:02:19.739 [redisson-netty-4-6] DEBUG io.netty.buffer.AbstractByteBuf - -Dio.netty.buffer.checkAccessible: true
+02:02:19.739 [redisson-netty-4-6] DEBUG io.netty.buffer.AbstractByteBuf - -Dio.netty.buffer.checkBounds: true
+02:02:19.739 [redisson-netty-4-6] DEBUG io.netty.util.ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@1b9407b8
+02:02:19.753 [redisson-netty-4-3] DEBUG org.redisson.connection.ClientConnectionsEntry - new connection created: RedisConnection@1454259970 [redisClient=[addr=/127.0.0.1:6379], channel=[id: 0x995a9b1c, L:/127.0.0.1:58900 - R:/127.0.0.1:6379]]
+02:02:19.753 [redisson-netty-4-7] DEBUG org.redisson.connection.ClientConnectionsEntry - new connection created: RedisConnection@1149144569 [redisClient=[addr=/127.0.0.1:6379], channel=[id: 0xdd638e6b, L:/127.0.0.1:58904 - R:/127.0.0.1:6379]]
+02:02:19.753 [redisson-netty-4-8] DEBUG org.redisson.connection.ClientConnectionsEntry - new connection created: RedisConnection@329557644 [redisClient=[addr=/127.0.0.1:6379], channel=[id: 0x6109fea2, L:/127.0.0.1:58896 - R:/127.0.0.1:6379]]
+02:02:19.753 [redisson-netty-4-1] DEBUG org.redisson.connection.ClientConnectionsEntry - new connection created: RedisConnection@1190084530 [redisClient=[addr=/127.0.0.1:6379], channel=[id: 0xccb378e7, L:/127.0.0.1:58903 - R:/127.0.0.1:6379]]
+02:02:19.753 [redisson-netty-4-2] DEBUG org.redisson.connection.ClientConnectionsEntry - new connection created: RedisConnection@1328245733 [redisClient=[addr=/127.0.0.1:6379], channel=[id: 0x285b2929, L:/127.0.0.1:58899 - R:/127.0.0.1:6379]]
+02:02:19.753 [redisson-netty-4-24] DEBUG org.redisson.connection.ClientConnectionsEntry - new connection created: RedisConnection@1338850622 [redisClient=[addr=/127.0.0.1:6379], channel=[id: 0xe9ba23ac, L:/127.0.0.1:58901 - R:/127.0.0.1:6379]]
+02:02:19.753 [redisson-netty-4-4] DEBUG org.redisson.connection.ClientConnectionsEntry - new connection created: RedisConnection@404010484 [redisClient=[addr=/127.0.0.1:6379], channel=[id: 0x7b11d0ff, L:/127.0.0.1:58905 - R:/127.0.0.1:6379]]
+02:02:19.753 [redisson-netty-4-5] DEBUG org.redisson.connection.ClientConnectionsEntry - new connection created: RedisConnection@1811352950 [redisClient=[addr=/127.0.0.1:6379], channel=[id: 0x9c3d2445, L:/127.0.0.1:58902 - R:/127.0.0.1:6379]]
+02:02:19.754 [redisson-netty-4-9] DEBUG org.redisson.connection.ClientConnectionsEntry - new connection created: RedisConnection@989829566 [redisClient=[addr=/127.0.0.1:6379], channel=[id: 0x6e3e432e, L:/127.0.0.1:58906 - R:/127.0.0.1:6379]]
+02:02:19.753 [redisson-netty-4-10] DEBUG org.redisson.connection.ClientConnectionsEntry - new connection created: RedisConnection@831547079 [redisClient=[addr=/127.0.0.1:6379], channel=[id: 0x88fe122b, L:/127.0.0.1:58898 - R:/127.0.0.1:6379]]
+02:02:19.753 [redisson-netty-4-6] DEBUG org.redisson.connection.ClientConnectionsEntry - new pubsub connection created: RedisPubSubConnection@1630883789 [redisClient=[addr=/127.0.0.1:6379], channel=[id: 0x9b932fbb, L:/127.0.0.1:58897 - R:/127.0.0.1:6379]]
+02:02:19.759 [redisson-netty-4-4] INFO  org.redisson.connection.pool.MasterConnectionPool - 10 connections initialized for /127.0.0.1:6379
+02:02:19.759 [redisson-netty-4-6] INFO  org.redisson.connection.pool.MasterPubSubConnectionPool - 1 connections initialized for /127.0.0.1:6379
+02:02:19.762 [main] DEBUG org.redisson.connection.SingleConnectionManager - DNS monitoring enabled; Current master set to /127.0.0.1
+02:02:19.801 [main] DEBUG org.apache.rocketmq.spring.autoconfigure.RocketMQAutoConfiguration - rocketmq.nameServer = 101.201.31.118:9876
+02:02:23.043 [main] DEBUG org.hibernate.validator.internal.engine.resolver.TraversableResolvers - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+02:02:23.043 [main] DEBUG org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator - Loaded expression factory via original TCCL
+02:02:23.044 [main] DEBUG org.hibernate.validator.internal.engine.resolver.TraversableResolvers - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+02:02:23.045 [main] DEBUG org.hibernate.validator.internal.engine.ConfigurationImpl - Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+02:02:23.045 [main] DEBUG org.hibernate.validator.internal.engine.ConfigurationImpl - Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+02:02:23.045 [main] DEBUG org.hibernate.validator.internal.engine.ConfigurationImpl - Setting custom ParameterNameProvider of type org.springframework.validation.beanvalidation.LocalValidatorFactoryBean$1
+02:02:23.046 [main] DEBUG org.hibernate.validator.internal.xml.config.ValidationXmlParser - Trying to load META-INF/validation.xml for XML based Validator configuration.
+02:02:23.046 [main] DEBUG org.hibernate.validator.internal.xml.config.ResourceLoaderHelper - Trying to load META-INF/validation.xml via user class loader
+02:02:23.046 [main] DEBUG org.hibernate.validator.internal.xml.config.ResourceLoaderHelper - Trying to load META-INF/validation.xml via TCCL
+02:02:23.046 [main] DEBUG org.hibernate.validator.internal.xml.config.ResourceLoaderHelper - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+02:02:23.047 [main] DEBUG org.hibernate.validator.internal.xml.config.ValidationXmlParser - No META-INF/validation.xml found. Using annotation based configuration only.
+02:02:23.049 [main] DEBUG org.hibernate.validator.internal.engine.ValidatorFactoryImpl - HV000234: Using org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator as ValidatorFactory-scoped message interpolator.
+02:02:23.050 [main] DEBUG org.hibernate.validator.internal.engine.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.resolver.TraverseAllTraversableResolver as ValidatorFactory-scoped traversable resolver.
+02:02:23.050 [main] DEBUG org.hibernate.validator.internal.engine.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+02:02:23.050 [main] DEBUG org.hibernate.validator.internal.engine.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+02:02:23.050 [main] DEBUG org.hibernate.validator.internal.engine.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+02:02:23.486 [main] DEBUG org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer - Access-key or secret-key not configure in DefaultRocketMQListenerContainer{consumerGroup='GID_order', nameServer='101.201.31.118:9876', topic='seckill', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='order', messageModel=CLUSTERING}.
+02:02:24.326 [main] DEBUG org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer - RocketMQ messageType: class java.lang.String
+02:02:24.450 [main] INFO  org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer - running container: DefaultRocketMQListenerContainer{consumerGroup='GID_order', nameServer='101.201.31.118:9876', topic='seckill', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='order', messageModel=CLUSTERING}
+02:02:24.450 [main] INFO  org.apache.rocketmq.spring.autoconfigure.ListenerContainerConfiguration - Register the listener to container, listenerBeanName:orderListener, containerBeanName:org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer_1
+02:02:24.451 [main] DEBUG org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer - Access-key or secret-key not configure in DefaultRocketMQListenerContainer{consumerGroup='GID_del_cache', nameServer='101.201.31.118:9876', topic='seckill', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='delCache', messageModel=CLUSTERING}.
+02:02:25.291 [main] DEBUG org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer - RocketMQ messageType: class java.lang.String
+02:02:25.404 [main] INFO  org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer - running container: DefaultRocketMQListenerContainer{consumerGroup='GID_del_cache', nameServer='101.201.31.118:9876', topic='seckill', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='delCache', messageModel=CLUSTERING}
+02:02:25.404 [main] INFO  org.apache.rocketmq.spring.autoconfigure.ListenerContainerConfiguration - Register the listener to container, listenerBeanName:delCacheListener, containerBeanName:org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer_2
+02:02:25.424 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8091"]
+02:02:25.440 [main] INFO  com.study.seckill.SeckillWebApplication - Started SeckillWebApplication in 9.078 seconds (JVM running for 10.427)
+02:03:16.748 [http-nio-8091-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+02:03:16.761 [http-nio-8091-exec-1] INFO  com.study.seckill.filter.SsoLoginFilter - url:=/seckill/simple/order,pattern:=/demo/(\w)+
+02:03:16.860 [http-nio-8091-exec-1] DEBUG io.lettuce.core.RedisClient - Trying to get a Redis connection for: RedisURI [host='127.0.0.1', port=6379]
+02:03:16.936 [http-nio-8091-exec-1] DEBUG io.lettuce.core.resource.DefaultEventLoopGroupProvider - Allocating executor io.netty.channel.nio.NioEventLoopGroup
+02:03:16.937 [http-nio-8091-exec-1] DEBUG io.lettuce.core.resource.DefaultEventLoopGroupProvider - Creating executor io.netty.channel.nio.NioEventLoopGroup
+02:03:16.943 [http-nio-8091-exec-1] DEBUG io.lettuce.core.resource.DefaultEventLoopGroupProvider - Adding reference to io.netty.channel.nio.NioEventLoopGroup@1c40c732, existing ref count 0
+02:03:17.102 [http-nio-8091-exec-1] DEBUG io.lettuce.core.RedisClient - Resolved SocketAddress 127.0.0.1:6379 using RedisURI [host='127.0.0.1', port=6379]
+02:03:17.103 [http-nio-8091-exec-1] DEBUG io.lettuce.core.RedisClient - Connecting to Redis at 127.0.0.1:6379
+02:03:17.120 [lettuce-nioEventLoop-7-1] DEBUG io.lettuce.core.RedisClient - Connecting to Redis at 127.0.0.1:6379: Success
+02:03:25.098 [redisson-netty-4-3] ERROR org.redisson.client.handler.CommandsQueue - Exception occured. Channel: [id: 0x88fe122b, L:/127.0.0.1:58898 - R:/127.0.0.1:6379]
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[?:1.8.0_282]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[?:1.8.0_282]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223) ~[?:1.8.0_282]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192) ~[?:1.8.0_282]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:379) ~[?:1.8.0_282]
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288) ~[netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132) ~[netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:347) ~[netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:677) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:612) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:529) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:491) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:905) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_282]
+02:03:25.098 [redisson-netty-4-5] ERROR org.redisson.client.handler.CommandsQueue - Exception occured. Channel: [id: 0x6109fea2, L:/127.0.0.1:58896 - R:/127.0.0.1:6379]
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[?:1.8.0_282]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[?:1.8.0_282]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223) ~[?:1.8.0_282]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192) ~[?:1.8.0_282]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:379) ~[?:1.8.0_282]
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288) ~[netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132) ~[netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:347) ~[netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:677) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:612) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:529) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:491) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:905) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_282]
+02:03:25.098 [redisson-netty-4-7] ERROR org.redisson.client.handler.CommandsQueue - Exception occured. Channel: [id: 0xccb378e7, L:/127.0.0.1:58903 - R:/127.0.0.1:6379]
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[?:1.8.0_282]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[?:1.8.0_282]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223) ~[?:1.8.0_282]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192) ~[?:1.8.0_282]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:379) ~[?:1.8.0_282]
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288) ~[netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132) ~[netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:347) ~[netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:677) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:612) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:529) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:491) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:905) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_282]
+02:03:25.098 [redisson-netty-4-8] ERROR org.redisson.client.handler.CommandsQueue - Exception occured. Channel: [id: 0x9c3d2445, L:/127.0.0.1:58902 - R:/127.0.0.1:6379]
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[?:1.8.0_282]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[?:1.8.0_282]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223) ~[?:1.8.0_282]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192) ~[?:1.8.0_282]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:379) ~[?:1.8.0_282]
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288) ~[netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132) ~[netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:347) ~[netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:677) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:612) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:529) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:491) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:905) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_282]
+02:03:25.204 [redisson-netty-4-9] ERROR org.redisson.client.handler.CommandsQueue - Exception occured. Channel: [id: 0x995a9b1c, L:/127.0.0.1:58900 - R:/127.0.0.1:6379]
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[?:1.8.0_282]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[?:1.8.0_282]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223) ~[?:1.8.0_282]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192) ~[?:1.8.0_282]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:379) ~[?:1.8.0_282]
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288) ~[netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132) ~[netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:347) ~[netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:677) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:612) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:529) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:491) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:905) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_282]
+02:03:25.205 [redisson-netty-4-2] ERROR org.redisson.client.handler.CommandsQueue - Exception occured. Channel: [id: 0x285b2929, L:/127.0.0.1:58899 - R:/127.0.0.1:6379]
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[?:1.8.0_282]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[?:1.8.0_282]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223) ~[?:1.8.0_282]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192) ~[?:1.8.0_282]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:379) ~[?:1.8.0_282]
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288) ~[netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132) ~[netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:347) ~[netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:677) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:612) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:529) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:491) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:905) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_282]
+02:03:25.205 [redisson-netty-4-12] ERROR org.redisson.client.handler.CommandsQueue - Exception occured. Channel: [id: 0x9b932fbb, L:/127.0.0.1:58897 - R:/127.0.0.1:6379]
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[?:1.8.0_282]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[?:1.8.0_282]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223) ~[?:1.8.0_282]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192) ~[?:1.8.0_282]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:379) ~[?:1.8.0_282]
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288) ~[netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132) ~[netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:347) ~[netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:677) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:612) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:529) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:491) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:905) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_282]
+02:03:25.205 [redisson-netty-4-11] ERROR org.redisson.client.handler.CommandsQueue - Exception occured. Channel: [id: 0x6e3e432e, L:/127.0.0.1:58906 - R:/127.0.0.1:6379]
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[?:1.8.0_282]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[?:1.8.0_282]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223) ~[?:1.8.0_282]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192) ~[?:1.8.0_282]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:379) ~[?:1.8.0_282]
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288) ~[netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132) ~[netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:347) ~[netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:677) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:612) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:529) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:491) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:905) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_282]
+02:03:25.205 [redisson-netty-4-10] ERROR org.redisson.client.handler.CommandsQueue - Exception occured. Channel: [id: 0x7b11d0ff, L:/127.0.0.1:58905 - R:/127.0.0.1:6379]
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[?:1.8.0_282]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[?:1.8.0_282]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223) ~[?:1.8.0_282]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192) ~[?:1.8.0_282]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:379) ~[?:1.8.0_282]
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288) ~[netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132) ~[netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:347) ~[netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:677) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:612) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:529) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:491) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:905) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_282]
+02:03:25.220 [pool-2-thread-1] DEBUG org.redisson.client.handler.ConnectionWatchdog - reconnecting RedisConnection@1811352950 [redisClient=[addr=/127.0.0.1:6379], channel=[id: 0x9c3d2445, L:/127.0.0.1:58902 ! R:/127.0.0.1:6379]] to /127.0.0.1:6379 
+02:03:25.221 [pool-2-thread-1] DEBUG org.redisson.client.handler.ConnectionWatchdog - reconnecting RedisConnection@831547079 [redisClient=[addr=/127.0.0.1:6379], channel=[id: 0x88fe122b, L:/127.0.0.1:58898 ! R:/127.0.0.1:6379]] to /127.0.0.1:6379 
+02:03:25.222 [pool-2-thread-1] DEBUG org.redisson.client.handler.ConnectionWatchdog - reconnecting RedisConnection@1190084530 [redisClient=[addr=/127.0.0.1:6379], channel=[id: 0xccb378e7, L:/127.0.0.1:58903 ! R:/127.0.0.1:6379]] to /127.0.0.1:6379 
+02:03:25.223 [pool-2-thread-1] DEBUG org.redisson.client.handler.ConnectionWatchdog - reconnecting RedisConnection@329557644 [redisClient=[addr=/127.0.0.1:6379], channel=[id: 0x6109fea2, L:/127.0.0.1:58896 ! R:/127.0.0.1:6379]] to /127.0.0.1:6379 
+02:03:25.224 [pool-2-thread-1] DEBUG org.redisson.client.handler.ConnectionWatchdog - reconnecting RedisConnection@1328245733 [redisClient=[addr=/127.0.0.1:6379], channel=[id: 0x285b2929, L:/127.0.0.1:58899 ! R:/127.0.0.1:6379]] to /127.0.0.1:6379 
+02:03:25.224 [redisson-netty-4-11] DEBUG org.redisson.client.handler.ConnectionWatchdog - RedisConnection@1811352950 [redisClient=[addr=/127.0.0.1:6379], channel=[id: 0x9c3d2445, L:/127.0.0.1:58902 ! R:/127.0.0.1:6379]] connected to /127.0.0.1:6379, command: null
+02:03:25.225 [redisson-netty-4-12] DEBUG org.redisson.client.handler.ConnectionWatchdog - RedisConnection@831547079 [redisClient=[addr=/127.0.0.1:6379], channel=[id: 0x88fe122b, L:/127.0.0.1:58898 ! R:/127.0.0.1:6379]] connected to /127.0.0.1:6379, command: null
+02:03:25.226 [pool-2-thread-1] DEBUG org.redisson.client.handler.ConnectionWatchdog - reconnecting RedisConnection@1454259970 [redisClient=[addr=/127.0.0.1:6379], channel=[id: 0x995a9b1c, L:/127.0.0.1:58900 ! R:/127.0.0.1:6379]] to /127.0.0.1:6379 
+02:03:25.227 [redisson-netty-4-15] DEBUG org.redisson.client.handler.ConnectionWatchdog - RedisConnection@1190084530 [redisClient=[addr=/127.0.0.1:6379], channel=[id: 0xccb378e7, L:/127.0.0.1:58903 ! R:/127.0.0.1:6379]] connected to /127.0.0.1:6379, command: null
+02:03:25.227 [pool-2-thread-1] DEBUG org.redisson.client.handler.ConnectionWatchdog - reconnecting RedisPubSubConnection@1630883789 [redisClient=[addr=/127.0.0.1:6379], channel=[id: 0x9b932fbb, L:/127.0.0.1:58897 ! R:/127.0.0.1:6379]] to /127.0.0.1:6379 
+02:03:25.228 [redisson-netty-4-14] DEBUG org.redisson.client.handler.ConnectionWatchdog - RedisConnection@329557644 [redisClient=[addr=/127.0.0.1:6379], channel=[id: 0x6109fea2, L:/127.0.0.1:58896 ! R:/127.0.0.1:6379]] connected to /127.0.0.1:6379, command: null
+02:03:25.229 [pool-2-thread-1] DEBUG org.redisson.client.handler.ConnectionWatchdog - reconnecting RedisConnection@404010484 [redisClient=[addr=/127.0.0.1:6379], channel=[id: 0x7b11d0ff, L:/127.0.0.1:58905 ! R:/127.0.0.1:6379]] to /127.0.0.1:6379 
+02:03:25.229 [pool-2-thread-1] DEBUG org.redisson.client.handler.ConnectionWatchdog - reconnecting RedisConnection@989829566 [redisClient=[addr=/127.0.0.1:6379], channel=[id: 0x6e3e432e, L:/127.0.0.1:58906 ! R:/127.0.0.1:6379]] to /127.0.0.1:6379 
+02:03:25.230 [redisson-netty-4-17] DEBUG org.redisson.client.handler.ConnectionWatchdog - RedisConnection@1328245733 [redisClient=[addr=/127.0.0.1:6379], channel=[id: 0x285b2929, L:/127.0.0.1:58899 ! R:/127.0.0.1:6379]] connected to /127.0.0.1:6379, command: null
+02:03:25.230 [redisson-netty-4-20] DEBUG org.redisson.client.handler.ConnectionWatchdog - RedisConnection@1454259970 [redisClient=[addr=/127.0.0.1:6379], channel=[id: 0x995a9b1c, L:/127.0.0.1:58900 ! R:/127.0.0.1:6379]] connected to /127.0.0.1:6379, command: null
+02:03:25.232 [redisson-netty-4-22] DEBUG org.redisson.client.handler.ConnectionWatchdog - RedisPubSubConnection@1630883789 [redisClient=[addr=/127.0.0.1:6379], channel=[id: 0x9b932fbb, L:/127.0.0.1:58897 ! R:/127.0.0.1:6379]] connected to /127.0.0.1:6379, command: null
+02:03:25.232 [redisson-netty-4-24] DEBUG org.redisson.client.handler.ConnectionWatchdog - RedisConnection@404010484 [redisClient=[addr=/127.0.0.1:6379], channel=[id: 0x7b11d0ff, L:/127.0.0.1:58905 ! R:/127.0.0.1:6379]] connected to /127.0.0.1:6379, command: null
+02:03:25.233 [redisson-netty-4-1] DEBUG org.redisson.client.handler.ConnectionWatchdog - RedisConnection@989829566 [redisClient=[addr=/127.0.0.1:6379], channel=[id: 0x6e3e432e, L:/127.0.0.1:58906 ! R:/127.0.0.1:6379]] connected to /127.0.0.1:6379, command: null
+02:03:25.425 [redisson-netty-4-4] ERROR org.redisson.client.handler.CommandsQueue - Exception occured. Channel: [id: 0xe9ba23ac, L:/127.0.0.1:58901 - R:/127.0.0.1:6379]
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[?:1.8.0_282]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[?:1.8.0_282]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223) ~[?:1.8.0_282]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192) ~[?:1.8.0_282]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:379) ~[?:1.8.0_282]
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288) ~[netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132) ~[netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:347) ~[netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:677) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:612) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:529) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:491) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:905) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_282]
+02:03:25.518 [pool-2-thread-1] DEBUG org.redisson.client.handler.ConnectionWatchdog - reconnecting RedisConnection@1338850622 [redisClient=[addr=/127.0.0.1:6379], channel=[id: 0xe9ba23ac, L:/127.0.0.1:58901 ! R:/127.0.0.1:6379]] to /127.0.0.1:6379 
+02:03:25.520 [redisson-netty-4-5] DEBUG org.redisson.client.handler.ConnectionWatchdog - RedisConnection@1338850622 [redisClient=[addr=/127.0.0.1:6379], channel=[id: 0xe9ba23ac, L:/127.0.0.1:58901 ! R:/127.0.0.1:6379]] connected to /127.0.0.1:6379, command: null
+02:03:25.534 [redisson-netty-4-6] ERROR org.redisson.client.handler.CommandsQueue - Exception occured. Channel: [id: 0xdd638e6b, L:/127.0.0.1:58904 - R:/127.0.0.1:6379]
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[?:1.8.0_282]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[?:1.8.0_282]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223) ~[?:1.8.0_282]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192) ~[?:1.8.0_282]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:379) ~[?:1.8.0_282]
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288) ~[netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132) ~[netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:347) ~[netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:677) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:612) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:529) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:491) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:905) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_282]
+02:03:25.628 [pool-2-thread-1] DEBUG org.redisson.client.handler.ConnectionWatchdog - reconnecting RedisConnection@1149144569 [redisClient=[addr=/127.0.0.1:6379], channel=[id: 0xdd638e6b, L:/127.0.0.1:58904 ! R:/127.0.0.1:6379]] to /127.0.0.1:6379 
+02:03:25.629 [redisson-netty-4-7] DEBUG org.redisson.client.handler.ConnectionWatchdog - RedisConnection@1149144569 [redisClient=[addr=/127.0.0.1:6379], channel=[id: 0xdd638e6b, L:/127.0.0.1:58904 ! R:/127.0.0.1:6379]] connected to /127.0.0.1:6379, command: null
+02:03:39.927 [http-nio-8091-exec-2] INFO  com.study.seckill.filter.SsoLoginFilter - url:=/user/getEmailEmCode,pattern:=/demo/(\w)+
+02:04:23.310 [lettuce-eventExecutorLoop-1-3] DEBUG io.lettuce.core.RedisClient - Resolved SocketAddress 127.0.0.1:6379 using RedisURI [host='127.0.0.1', port=6379]
+02:04:31.077 [redisson-netty-4-24] ERROR org.redisson.client.handler.CommandsQueue - Exception occured. Channel: [id: 0xbddb4254, L:/127.0.0.1:58963 - R:/127.0.0.1:6379]
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[?:1.8.0_282]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[?:1.8.0_282]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223) ~[?:1.8.0_282]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192) ~[?:1.8.0_282]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:379) ~[?:1.8.0_282]
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288) ~[netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132) ~[netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:347) ~[netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:677) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:612) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:529) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:491) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:905) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_282]
+02:04:31.077 [redisson-netty-4-1] ERROR org.redisson.client.handler.CommandsQueue - Exception occured. Channel: [id: 0x65def415, L:/127.0.0.1:58964 - R:/127.0.0.1:6379]
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[?:1.8.0_282]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[?:1.8.0_282]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223) ~[?:1.8.0_282]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192) ~[?:1.8.0_282]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:379) ~[?:1.8.0_282]
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288) ~[netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132) ~[netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:347) ~[netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:677) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:612) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:529) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:491) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:905) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_282]
+02:04:31.077 [redisson-netty-4-5] ERROR org.redisson.client.handler.CommandsQueue - Exception occured. Channel: [id: 0x85991e8c, L:/127.0.0.1:58965 - R:/127.0.0.1:6379]
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[?:1.8.0_282]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[?:1.8.0_282]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223) ~[?:1.8.0_282]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192) ~[?:1.8.0_282]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:379) ~[?:1.8.0_282]
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288) ~[netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132) ~[netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:347) ~[netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:677) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:612) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:529) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:491) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:905) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_282]
+02:04:31.077 [redisson-netty-4-7] ERROR org.redisson.client.handler.CommandsQueue - Exception occured. Channel: [id: 0x3cccff80, L:/127.0.0.1:58966 - R:/127.0.0.1:6379]
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[?:1.8.0_282]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[?:1.8.0_282]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223) ~[?:1.8.0_282]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192) ~[?:1.8.0_282]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:379) ~[?:1.8.0_282]
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288) ~[netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132) ~[netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:347) ~[netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:677) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:612) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:529) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:491) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:905) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_282]
+02:04:31.077 [redisson-netty-4-22] ERROR org.redisson.client.handler.CommandsQueue - Exception occured. Channel: [id: 0x92d2f345, L:/127.0.0.1:58962 - R:/127.0.0.1:6379]
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[?:1.8.0_282]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[?:1.8.0_282]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223) ~[?:1.8.0_282]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192) ~[?:1.8.0_282]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:379) ~[?:1.8.0_282]
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288) ~[netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132) ~[netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:347) ~[netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:677) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:612) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:529) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:491) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:905) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_282]
+02:04:31.123 [pool-2-thread-1] DEBUG org.redisson.client.handler.ConnectionWatchdog - reconnecting RedisConnection@404010484 [redisClient=[addr=/127.0.0.1:6379], channel=[id: 0xbddb4254, L:/127.0.0.1:58963 ! R:/127.0.0.1:6379]] to /127.0.0.1:6379 
+02:04:31.123 [pool-2-thread-1] DEBUG org.redisson.client.handler.ConnectionWatchdog - reconnecting RedisConnection@989829566 [redisClient=[addr=/127.0.0.1:6379], channel=[id: 0x65def415, L:/127.0.0.1:58964 ! R:/127.0.0.1:6379]] to /127.0.0.1:6379 
+02:04:31.124 [pool-2-thread-1] DEBUG org.redisson.client.handler.ConnectionWatchdog - reconnecting RedisConnection@1338850622 [redisClient=[addr=/127.0.0.1:6379], channel=[id: 0x85991e8c, L:/127.0.0.1:58965 ! R:/127.0.0.1:6379]] to /127.0.0.1:6379 
+02:04:31.125 [pool-2-thread-1] DEBUG org.redisson.client.handler.ConnectionWatchdog - reconnecting RedisConnection@1149144569 [redisClient=[addr=/127.0.0.1:6379], channel=[id: 0x3cccff80, L:/127.0.0.1:58966 ! R:/127.0.0.1:6379]] to /127.0.0.1:6379 
+02:04:31.127 [pool-2-thread-1] DEBUG org.redisson.client.handler.ConnectionWatchdog - reconnecting RedisPubSubConnection@1630883789 [redisClient=[addr=/127.0.0.1:6379], channel=[id: 0x92d2f345, L:/127.0.0.1:58962 ! R:/127.0.0.1:6379]] to /127.0.0.1:6379 
+02:04:31.128 [redisson-netty-4-9] DEBUG org.redisson.client.handler.ConnectionWatchdog - RedisConnection@404010484 [redisClient=[addr=/127.0.0.1:6379], channel=[id: 0xbddb4254, L:/127.0.0.1:58963 ! R:/127.0.0.1:6379]] connected to /127.0.0.1:6379, command: null
+02:04:31.128 [redisson-netty-4-10] DEBUG org.redisson.client.handler.ConnectionWatchdog - RedisConnection@989829566 [redisClient=[addr=/127.0.0.1:6379], channel=[id: 0x65def415, L:/127.0.0.1:58964 ! R:/127.0.0.1:6379]] connected to /127.0.0.1:6379, command: null
+02:04:31.129 [redisson-netty-4-12] DEBUG org.redisson.client.handler.ConnectionWatchdog - RedisConnection@1338850622 [redisClient=[addr=/127.0.0.1:6379], channel=[id: 0x85991e8c, L:/127.0.0.1:58965 ! R:/127.0.0.1:6379]] connected to /127.0.0.1:6379, command: null
+02:04:31.130 [redisson-netty-4-14] DEBUG org.redisson.client.handler.ConnectionWatchdog - RedisPubSubConnection@1630883789 [redisClient=[addr=/127.0.0.1:6379], channel=[id: 0x92d2f345, L:/127.0.0.1:58962 ! R:/127.0.0.1:6379]] connected to /127.0.0.1:6379, command: null
+02:04:31.131 [redisson-netty-4-13] DEBUG org.redisson.client.handler.ConnectionWatchdog - RedisConnection@1149144569 [redisClient=[addr=/127.0.0.1:6379], channel=[id: 0x3cccff80, L:/127.0.0.1:58966 ! R:/127.0.0.1:6379]] connected to /127.0.0.1:6379, command: null
+02:04:31.295 [redisson-netty-4-14] ERROR org.redisson.client.handler.CommandsQueue - Exception occured. Channel: [id: 0xe01701c9, L:/127.0.0.1:58959 - R:/127.0.0.1:6379]
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[?:1.8.0_282]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[?:1.8.0_282]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223) ~[?:1.8.0_282]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192) ~[?:1.8.0_282]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:379) ~[?:1.8.0_282]
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288) ~[netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132) ~[netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:347) ~[netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:677) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:612) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:529) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:491) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:905) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_282]
+02:04:31.295 [redisson-netty-4-17] ERROR org.redisson.client.handler.CommandsQueue - Exception occured. Channel: [id: 0x135eac76, L:/127.0.0.1:58960 - R:/127.0.0.1:6379]
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[?:1.8.0_282]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[?:1.8.0_282]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223) ~[?:1.8.0_282]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192) ~[?:1.8.0_282]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:379) ~[?:1.8.0_282]
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288) ~[netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132) ~[netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:347) ~[netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:677) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:612) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:529) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:491) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:905) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_282]
+02:04:31.295 [redisson-netty-4-20] ERROR org.redisson.client.handler.CommandsQueue - Exception occured. Channel: [id: 0x33644b2a, L:/127.0.0.1:58961 - R:/127.0.0.1:6379]
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[?:1.8.0_282]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[?:1.8.0_282]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223) ~[?:1.8.0_282]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192) ~[?:1.8.0_282]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:379) ~[?:1.8.0_282]
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288) ~[netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132) ~[netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:347) ~[netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:677) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:612) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:529) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:491) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:905) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_282]
+02:04:31.295 [redisson-netty-4-12] ERROR org.redisson.client.handler.CommandsQueue - Exception occured. Channel: [id: 0x5b6aa273, L:/127.0.0.1:58957 - R:/127.0.0.1:6379]
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[?:1.8.0_282]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[?:1.8.0_282]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223) ~[?:1.8.0_282]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192) ~[?:1.8.0_282]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:379) ~[?:1.8.0_282]
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288) ~[netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132) ~[netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:347) ~[netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:677) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:612) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:529) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:491) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:905) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_282]
+02:04:31.295 [redisson-netty-4-15] ERROR org.redisson.client.handler.CommandsQueue - Exception occured. Channel: [id: 0x5bd20d02, L:/127.0.0.1:58958 - R:/127.0.0.1:6379]
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[?:1.8.0_282]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[?:1.8.0_282]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223) ~[?:1.8.0_282]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192) ~[?:1.8.0_282]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:379) ~[?:1.8.0_282]
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288) ~[netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132) ~[netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:347) ~[netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:677) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:612) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:529) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:491) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:905) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_282]
+02:04:31.327 [pool-2-thread-1] DEBUG org.redisson.client.handler.ConnectionWatchdog - reconnecting RedisConnection@329557644 [redisClient=[addr=/127.0.0.1:6379], channel=[id: 0xe01701c9, L:/127.0.0.1:58959 ! R:/127.0.0.1:6379]] to /127.0.0.1:6379 
+02:04:31.327 [pool-2-thread-1] DEBUG org.redisson.client.handler.ConnectionWatchdog - reconnecting RedisConnection@831547079 [redisClient=[addr=/127.0.0.1:6379], channel=[id: 0x5b6aa273, L:/127.0.0.1:58957 ! R:/127.0.0.1:6379]] to /127.0.0.1:6379 
+02:04:31.328 [pool-2-thread-1] DEBUG org.redisson.client.handler.ConnectionWatchdog - reconnecting RedisConnection@1328245733 [redisClient=[addr=/127.0.0.1:6379], channel=[id: 0x135eac76, L:/127.0.0.1:58960 ! R:/127.0.0.1:6379]] to /127.0.0.1:6379 
+02:04:31.329 [pool-2-thread-1] DEBUG org.redisson.client.handler.ConnectionWatchdog - reconnecting RedisConnection@1454259970 [redisClient=[addr=/127.0.0.1:6379], channel=[id: 0x33644b2a, L:/127.0.0.1:58961 ! R:/127.0.0.1:6379]] to /127.0.0.1:6379 
+02:04:31.330 [pool-2-thread-1] DEBUG org.redisson.client.handler.ConnectionWatchdog - reconnecting RedisConnection@1190084530 [redisClient=[addr=/127.0.0.1:6379], channel=[id: 0x5bd20d02, L:/127.0.0.1:58958 ! R:/127.0.0.1:6379]] to /127.0.0.1:6379 
+02:04:31.332 [redisson-netty-4-19] DEBUG org.redisson.client.handler.ConnectionWatchdog - RedisConnection@329557644 [redisClient=[addr=/127.0.0.1:6379], channel=[id: 0xe01701c9, L:/127.0.0.1:58959 ! R:/127.0.0.1:6379]] connected to /127.0.0.1:6379, command: null
+02:04:31.333 [redisson-netty-4-20] DEBUG org.redisson.client.handler.ConnectionWatchdog - RedisConnection@831547079 [redisClient=[addr=/127.0.0.1:6379], channel=[id: 0x5b6aa273, L:/127.0.0.1:58957 ! R:/127.0.0.1:6379]] connected to /127.0.0.1:6379, command: null
+02:04:31.333 [redisson-netty-4-22] DEBUG org.redisson.client.handler.ConnectionWatchdog - RedisConnection@1328245733 [redisClient=[addr=/127.0.0.1:6379], channel=[id: 0x135eac76, L:/127.0.0.1:58960 ! R:/127.0.0.1:6379]] connected to /127.0.0.1:6379, command: null
+02:04:31.335 [redisson-netty-4-1] DEBUG org.redisson.client.handler.ConnectionWatchdog - RedisConnection@1190084530 [redisClient=[addr=/127.0.0.1:6379], channel=[id: 0x5bd20d02, L:/127.0.0.1:58958 ! R:/127.0.0.1:6379]] connected to /127.0.0.1:6379, command: null
+02:04:31.335 [redisson-netty-4-23] DEBUG org.redisson.client.handler.ConnectionWatchdog - RedisConnection@1454259970 [redisClient=[addr=/127.0.0.1:6379], channel=[id: 0x33644b2a, L:/127.0.0.1:58961 ! R:/127.0.0.1:6379]] connected to /127.0.0.1:6379, command: null
+02:04:31.514 [redisson-netty-4-11] ERROR org.redisson.client.handler.CommandsQueue - Exception occured. Channel: [id: 0x850a7f6a, L:/127.0.0.1:58956 - R:/127.0.0.1:6379]
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[?:1.8.0_282]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[?:1.8.0_282]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223) ~[?:1.8.0_282]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192) ~[?:1.8.0_282]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:379) ~[?:1.8.0_282]
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288) ~[netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132) ~[netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:347) ~[netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:677) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:612) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:529) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:491) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:905) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_282]
+02:04:31.624 [pool-2-thread-1] DEBUG org.redisson.client.handler.ConnectionWatchdog - reconnecting RedisConnection@1811352950 [redisClient=[addr=/127.0.0.1:6379], channel=[id: 0x850a7f6a, L:/127.0.0.1:58956 ! R:/127.0.0.1:6379]] to /127.0.0.1:6379 
+02:04:31.627 [redisson-netty-4-5] DEBUG org.redisson.client.handler.ConnectionWatchdog - RedisConnection@1811352950 [redisClient=[addr=/127.0.0.1:6379], channel=[id: 0x850a7f6a, L:/127.0.0.1:58956 ! R:/127.0.0.1:6379]] connected to /127.0.0.1:6379, command: null
+02:05:29.109 [lettuce-eventExecutorLoop-1-5] DEBUG io.lettuce.core.RedisClient - Resolved SocketAddress 127.0.0.1:6379 using RedisURI [host='127.0.0.1', port=6379]
+02:05:37.062 [redisson-netty-4-14] ERROR org.redisson.client.handler.CommandsQueue - Exception occured. Channel: [id: 0x82f6fe40, L:/127.0.0.1:58997 - R:/127.0.0.1:6379]
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[?:1.8.0_282]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[?:1.8.0_282]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223) ~[?:1.8.0_282]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192) ~[?:1.8.0_282]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:379) ~[?:1.8.0_282]
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288) ~[netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132) ~[netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:347) ~[netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:677) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:612) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:529) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:491) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:905) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_282]
+02:05:37.062 [redisson-netty-4-5] ERROR org.redisson.client.handler.CommandsQueue - Exception occured. Channel: [id: 0xc291654f, L:/127.0.0.1:59003 - R:/127.0.0.1:6379]
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[?:1.8.0_282]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[?:1.8.0_282]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223) ~[?:1.8.0_282]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192) ~[?:1.8.0_282]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:379) ~[?:1.8.0_282]
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288) ~[netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132) ~[netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:347) ~[netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:677) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:612) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:529) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:491) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:905) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_282]
+02:05:37.062 [redisson-netty-4-22] ERROR org.redisson.client.handler.CommandsQueue - Exception occured. Channel: [id: 0x2c20c809, L:/127.0.0.1:59000 - R:/127.0.0.1:6379]
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[?:1.8.0_282]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[?:1.8.0_282]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223) ~[?:1.8.0_282]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192) ~[?:1.8.0_282]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:379) ~[?:1.8.0_282]
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288) ~[netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132) ~[netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:347) ~[netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:677) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:612) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:529) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:491) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:905) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_282]
+02:05:37.062 [redisson-netty-4-19] ERROR org.redisson.client.handler.CommandsQueue - Exception occured. Channel: [id: 0xd850ed48, L:/127.0.0.1:58998 - R:/127.0.0.1:6379]
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[?:1.8.0_282]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[?:1.8.0_282]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223) ~[?:1.8.0_282]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192) ~[?:1.8.0_282]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:379) ~[?:1.8.0_282]
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288) ~[netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132) ~[netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:347) ~[netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:677) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:612) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:529) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:491) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:905) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_282]
+02:05:37.062 [redisson-netty-4-20] ERROR org.redisson.client.handler.CommandsQueue - Exception occured. Channel: [id: 0xf4b163a2, L:/127.0.0.1:58999 - R:/127.0.0.1:6379]
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[?:1.8.0_282]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[?:1.8.0_282]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223) ~[?:1.8.0_282]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192) ~[?:1.8.0_282]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:379) ~[?:1.8.0_282]
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288) ~[netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132) ~[netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:347) ~[netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:677) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:612) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:529) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:491) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:905) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_282]
+02:05:37.125 [pool-2-thread-1] DEBUG org.redisson.client.handler.ConnectionWatchdog - reconnecting RedisPubSubConnection@1630883789 [redisClient=[addr=/127.0.0.1:6379], channel=[id: 0x82f6fe40, L:/127.0.0.1:58997 ! R:/127.0.0.1:6379]] to /127.0.0.1:6379 
+02:05:37.125 [pool-2-thread-1] DEBUG org.redisson.client.handler.ConnectionWatchdog - reconnecting RedisConnection@1811352950 [redisClient=[addr=/127.0.0.1:6379], channel=[id: 0xc291654f, L:/127.0.0.1:59003 ! R:/127.0.0.1:6379]] to /127.0.0.1:6379 
+02:05:37.125 [pool-2-thread-1] DEBUG org.redisson.client.handler.ConnectionWatchdog - reconnecting RedisConnection@1328245733 [redisClient=[addr=/127.0.0.1:6379], channel=[id: 0x2c20c809, L:/127.0.0.1:59000 ! R:/127.0.0.1:6379]] to /127.0.0.1:6379 
+02:05:37.126 [pool-2-thread-1] DEBUG org.redisson.client.handler.ConnectionWatchdog - reconnecting RedisConnection@329557644 [redisClient=[addr=/127.0.0.1:6379], channel=[id: 0xd850ed48, L:/127.0.0.1:58998 ! R:/127.0.0.1:6379]] to /127.0.0.1:6379 
+02:05:37.127 [pool-2-thread-1] DEBUG org.redisson.client.handler.ConnectionWatchdog - reconnecting RedisConnection@831547079 [redisClient=[addr=/127.0.0.1:6379], channel=[id: 0xf4b163a2, L:/127.0.0.1:58999 ! R:/127.0.0.1:6379]] to /127.0.0.1:6379 
+02:05:37.128 [redisson-netty-4-7] DEBUG org.redisson.client.handler.ConnectionWatchdog - RedisPubSubConnection@1630883789 [redisClient=[addr=/127.0.0.1:6379], channel=[id: 0x82f6fe40, L:/127.0.0.1:58997 ! R:/127.0.0.1:6379]] connected to /127.0.0.1:6379, command: null
+02:05:37.129 [redisson-netty-4-8] DEBUG org.redisson.client.handler.ConnectionWatchdog - RedisConnection@1811352950 [redisClient=[addr=/127.0.0.1:6379], channel=[id: 0xc291654f, L:/127.0.0.1:59003 ! R:/127.0.0.1:6379]] connected to /127.0.0.1:6379, command: null
+02:05:37.130 [redisson-netty-4-9] DEBUG org.redisson.client.handler.ConnectionWatchdog - RedisConnection@1328245733 [redisClient=[addr=/127.0.0.1:6379], channel=[id: 0x2c20c809, L:/127.0.0.1:59000 ! R:/127.0.0.1:6379]] connected to /127.0.0.1:6379, command: null
+02:05:37.131 [redisson-netty-4-15] DEBUG org.redisson.client.handler.ConnectionWatchdog - RedisConnection@831547079 [redisClient=[addr=/127.0.0.1:6379], channel=[id: 0xf4b163a2, L:/127.0.0.1:58999 ! R:/127.0.0.1:6379]] connected to /127.0.0.1:6379, command: null
+02:05:37.132 [redisson-netty-4-11] DEBUG org.redisson.client.handler.ConnectionWatchdog - RedisConnection@329557644 [redisClient=[addr=/127.0.0.1:6379], channel=[id: 0xd850ed48, L:/127.0.0.1:58998 ! R:/127.0.0.1:6379]] connected to /127.0.0.1:6379, command: null
+02:05:37.282 [redisson-netty-4-9] ERROR org.redisson.client.handler.CommandsQueue - Exception occured. Channel: [id: 0x44fb1798, L:/127.0.0.1:58993 - R:/127.0.0.1:6379]
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[?:1.8.0_282]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[?:1.8.0_282]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223) ~[?:1.8.0_282]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192) ~[?:1.8.0_282]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:379) ~[?:1.8.0_282]
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288) ~[netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132) ~[netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:347) ~[netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:677) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:612) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:529) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:491) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:905) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_282]
+02:05:37.282 [redisson-netty-4-13] ERROR org.redisson.client.handler.CommandsQueue - Exception occured. Channel: [id: 0x2cfdf244, L:/127.0.0.1:58996 - R:/127.0.0.1:6379]
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[?:1.8.0_282]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[?:1.8.0_282]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223) ~[?:1.8.0_282]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192) ~[?:1.8.0_282]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:379) ~[?:1.8.0_282]
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288) ~[netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132) ~[netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:347) ~[netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:677) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:612) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:529) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:491) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:905) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_282]
+02:05:37.282 [redisson-netty-4-10] ERROR org.redisson.client.handler.CommandsQueue - Exception occured. Channel: [id: 0x73fb904f, L:/127.0.0.1:58994 - R:/127.0.0.1:6379]
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[?:1.8.0_282]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[?:1.8.0_282]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223) ~[?:1.8.0_282]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192) ~[?:1.8.0_282]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:379) ~[?:1.8.0_282]
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288) ~[netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132) ~[netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:347) ~[netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:677) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:612) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:529) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:491) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:905) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_282]
+02:05:37.282 [redisson-netty-4-12] ERROR org.redisson.client.handler.CommandsQueue - Exception occured. Channel: [id: 0x95f26bf6, L:/127.0.0.1:58995 - R:/127.0.0.1:6379]
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[?:1.8.0_282]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[?:1.8.0_282]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223) ~[?:1.8.0_282]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192) ~[?:1.8.0_282]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:379) ~[?:1.8.0_282]
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288) ~[netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132) ~[netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:347) ~[netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:677) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:612) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:529) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:491) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:905) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_282]
+02:05:37.329 [pool-2-thread-1] DEBUG org.redisson.client.handler.ConnectionWatchdog - reconnecting RedisConnection@404010484 [redisClient=[addr=/127.0.0.1:6379], channel=[id: 0x44fb1798, L:/127.0.0.1:58993 ! R:/127.0.0.1:6379]] to /127.0.0.1:6379 
+02:05:37.329 [pool-2-thread-1] DEBUG org.redisson.client.handler.ConnectionWatchdog - reconnecting RedisConnection@989829566 [redisClient=[addr=/127.0.0.1:6379], channel=[id: 0x73fb904f, L:/127.0.0.1:58994 ! R:/127.0.0.1:6379]] to /127.0.0.1:6379 
+02:05:37.330 [pool-2-thread-1] DEBUG org.redisson.client.handler.ConnectionWatchdog - reconnecting RedisConnection@1149144569 [redisClient=[addr=/127.0.0.1:6379], channel=[id: 0x2cfdf244, L:/127.0.0.1:58996 ! R:/127.0.0.1:6379]] to /127.0.0.1:6379 
+02:05:37.331 [pool-2-thread-1] DEBUG org.redisson.client.handler.ConnectionWatchdog - reconnecting RedisConnection@1338850622 [redisClient=[addr=/127.0.0.1:6379], channel=[id: 0x95f26bf6, L:/127.0.0.1:58995 ! R:/127.0.0.1:6379]] to /127.0.0.1:6379 
+02:05:37.332 [redisson-netty-4-17] DEBUG org.redisson.client.handler.ConnectionWatchdog - RedisConnection@404010484 [redisClient=[addr=/127.0.0.1:6379], channel=[id: 0x44fb1798, L:/127.0.0.1:58993 ! R:/127.0.0.1:6379]] connected to /127.0.0.1:6379, command: null
+02:05:37.333 [redisson-netty-4-18] DEBUG org.redisson.client.handler.ConnectionWatchdog - RedisConnection@989829566 [redisClient=[addr=/127.0.0.1:6379], channel=[id: 0x73fb904f, L:/127.0.0.1:58994 ! R:/127.0.0.1:6379]] connected to /127.0.0.1:6379, command: null
+02:05:37.335 [redisson-netty-4-20] DEBUG org.redisson.client.handler.ConnectionWatchdog - RedisConnection@1149144569 [redisClient=[addr=/127.0.0.1:6379], channel=[id: 0x2cfdf244, L:/127.0.0.1:58996 ! R:/127.0.0.1:6379]] connected to /127.0.0.1:6379, command: null
+02:05:37.336 [redisson-netty-4-22] DEBUG org.redisson.client.handler.ConnectionWatchdog - RedisConnection@1338850622 [redisClient=[addr=/127.0.0.1:6379], channel=[id: 0x95f26bf6, L:/127.0.0.1:58995 ! R:/127.0.0.1:6379]] connected to /127.0.0.1:6379, command: null
+02:05:37.393 [redisson-netty-4-1] ERROR org.redisson.client.handler.CommandsQueue - Exception occured. Channel: [id: 0xde93ab68, L:/127.0.0.1:59002 - R:/127.0.0.1:6379]
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[?:1.8.0_282]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[?:1.8.0_282]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223) ~[?:1.8.0_282]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192) ~[?:1.8.0_282]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:379) ~[?:1.8.0_282]
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288) ~[netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132) ~[netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:347) ~[netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:677) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:612) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:529) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:491) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:905) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_282]
+02:05:37.425 [pool-2-thread-1] DEBUG org.redisson.client.handler.ConnectionWatchdog - reconnecting RedisConnection@1190084530 [redisClient=[addr=/127.0.0.1:6379], channel=[id: 0xde93ab68, L:/127.0.0.1:59002 ! R:/127.0.0.1:6379]] to /127.0.0.1:6379 
+02:05:37.426 [redisson-netty-4-1] DEBUG org.redisson.client.handler.ConnectionWatchdog - RedisConnection@1190084530 [redisClient=[addr=/127.0.0.1:6379], channel=[id: 0xde93ab68, L:/127.0.0.1:59002 ! R:/127.0.0.1:6379]] connected to /127.0.0.1:6379, command: null
+02:05:37.723 [redisson-netty-4-23] ERROR org.redisson.client.handler.CommandsQueue - Exception occured. Channel: [id: 0x4a0db49a, L:/127.0.0.1:59001 - R:/127.0.0.1:6379]
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[?:1.8.0_282]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[?:1.8.0_282]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223) ~[?:1.8.0_282]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192) ~[?:1.8.0_282]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:379) ~[?:1.8.0_282]
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288) ~[netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132) ~[netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:347) ~[netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:677) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:612) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:529) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:491) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:905) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_282]
+02:05:37.819 [pool-2-thread-1] DEBUG org.redisson.client.handler.ConnectionWatchdog - reconnecting RedisConnection@1454259970 [redisClient=[addr=/127.0.0.1:6379], channel=[id: 0x4a0db49a, L:/127.0.0.1:59001 ! R:/127.0.0.1:6379]] to /127.0.0.1:6379 
+02:05:37.822 [redisson-netty-4-3] DEBUG org.redisson.client.handler.ConnectionWatchdog - RedisConnection@1454259970 [redisClient=[addr=/127.0.0.1:6379], channel=[id: 0x4a0db49a, L:/127.0.0.1:59001 ! R:/127.0.0.1:6379]] connected to /127.0.0.1:6379, command: null
+02:06:35.399 [lettuce-eventExecutorLoop-1-7] DEBUG io.lettuce.core.RedisClient - Resolved SocketAddress 127.0.0.1:6379 using RedisURI [host='127.0.0.1', port=6379]
+02:06:39.171 [NettyClientSelector_1] INFO  RocketmqRemoting - closeChannel: close the connection to remote address[] result: true
+02:06:41.324 [NettyClientSelector_1] INFO  RocketmqRemoting - closeChannel: close the connection to remote address[] result: true
+02:06:43.013 [redisson-netty-4-22] ERROR org.redisson.client.handler.CommandsQueue - Exception occured. Channel: [id: 0x8ec67103, L:/127.0.0.1:59160 - R:/127.0.0.1:6379]
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[?:1.8.0_282]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[?:1.8.0_282]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223) ~[?:1.8.0_282]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192) ~[?:1.8.0_282]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:379) ~[?:1.8.0_282]
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288) ~[netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132) ~[netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:347) ~[netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:677) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:612) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:529) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:491) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:905) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_282]
+02:06:43.029 [pool-2-thread-1] DEBUG org.redisson.client.handler.ConnectionWatchdog - reconnecting RedisConnection@1338850622 [redisClient=[addr=/127.0.0.1:6379], channel=[id: 0x8ec67103, L:/127.0.0.1:59160 ! R:/127.0.0.1:6379]] to /127.0.0.1:6379 
+02:06:43.031 [redisson-netty-4-5] DEBUG org.redisson.client.handler.ConnectionWatchdog - RedisConnection@1338850622 [redisClient=[addr=/127.0.0.1:6379], channel=[id: 0x8ec67103, L:/127.0.0.1:59160 ! R:/127.0.0.1:6379]] connected to /127.0.0.1:6379, command: null
+02:06:43.123 [redisson-netty-4-18] ERROR org.redisson.client.handler.CommandsQueue - Exception occured. Channel: [id: 0x44a67528, L:/127.0.0.1:59158 - R:/127.0.0.1:6379]
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[?:1.8.0_282]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[?:1.8.0_282]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223) ~[?:1.8.0_282]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192) ~[?:1.8.0_282]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:379) ~[?:1.8.0_282]
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288) ~[netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132) ~[netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:347) ~[netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:677) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:612) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:529) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:491) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:905) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_282]
+02:06:43.123 [redisson-netty-4-17] ERROR org.redisson.client.handler.CommandsQueue - Exception occured. Channel: [id: 0xd47b4dce, L:/127.0.0.1:59157 - R:/127.0.0.1:6379]
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[?:1.8.0_282]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[?:1.8.0_282]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223) ~[?:1.8.0_282]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192) ~[?:1.8.0_282]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:379) ~[?:1.8.0_282]
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288) ~[netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132) ~[netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:347) ~[netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:677) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:612) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:529) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:491) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:905) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_282]
+02:06:43.123 [redisson-netty-4-1] ERROR org.redisson.client.handler.CommandsQueue - Exception occured. Channel: [id: 0x1a38d51f, L:/127.0.0.1:59161 - R:/127.0.0.1:6379]
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[?:1.8.0_282]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[?:1.8.0_282]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223) ~[?:1.8.0_282]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192) ~[?:1.8.0_282]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:379) ~[?:1.8.0_282]
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288) ~[netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132) ~[netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:347) ~[netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:677) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:612) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:529) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:491) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:905) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_282]
+02:06:43.123 [redisson-netty-4-20] ERROR org.redisson.client.handler.CommandsQueue - Exception occured. Channel: [id: 0x8a19b89c, L:/127.0.0.1:59159 - R:/127.0.0.1:6379]
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[?:1.8.0_282]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[?:1.8.0_282]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223) ~[?:1.8.0_282]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192) ~[?:1.8.0_282]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:379) ~[?:1.8.0_282]
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288) ~[netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132) ~[netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:347) ~[netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:677) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:612) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:529) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:491) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:905) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_282]
+02:06:43.218 [pool-2-thread-1] DEBUG org.redisson.client.handler.ConnectionWatchdog - reconnecting RedisConnection@989829566 [redisClient=[addr=/127.0.0.1:6379], channel=[id: 0x44a67528, L:/127.0.0.1:59158 ! R:/127.0.0.1:6379]] to /127.0.0.1:6379 
+02:06:43.219 [pool-2-thread-1] DEBUG org.redisson.client.handler.ConnectionWatchdog - reconnecting RedisConnection@1190084530 [redisClient=[addr=/127.0.0.1:6379], channel=[id: 0x1a38d51f, L:/127.0.0.1:59161 ! R:/127.0.0.1:6379]] to /127.0.0.1:6379 
+02:06:43.219 [pool-2-thread-1] DEBUG org.redisson.client.handler.ConnectionWatchdog - reconnecting RedisConnection@404010484 [redisClient=[addr=/127.0.0.1:6379], channel=[id: 0xd47b4dce, L:/127.0.0.1:59157 ! R:/127.0.0.1:6379]] to /127.0.0.1:6379 
+02:06:43.220 [pool-2-thread-1] DEBUG org.redisson.client.handler.ConnectionWatchdog - reconnecting RedisConnection@1149144569 [redisClient=[addr=/127.0.0.1:6379], channel=[id: 0x8a19b89c, L:/127.0.0.1:59159 ! R:/127.0.0.1:6379]] to /127.0.0.1:6379 
+02:06:43.221 [redisson-netty-4-7] DEBUG org.redisson.client.handler.ConnectionWatchdog - RedisConnection@989829566 [redisClient=[addr=/127.0.0.1:6379], channel=[id: 0x44a67528, L:/127.0.0.1:59158 ! R:/127.0.0.1:6379]] connected to /127.0.0.1:6379, command: null
+02:06:43.223 [redisson-netty-4-8] DEBUG org.redisson.client.handler.ConnectionWatchdog - RedisConnection@1190084530 [redisClient=[addr=/127.0.0.1:6379], channel=[id: 0x1a38d51f, L:/127.0.0.1:59161 ! R:/127.0.0.1:6379]] connected to /127.0.0.1:6379, command: null
+02:06:43.224 [redisson-netty-4-9] DEBUG org.redisson.client.handler.ConnectionWatchdog - RedisConnection@404010484 [redisClient=[addr=/127.0.0.1:6379], channel=[id: 0xd47b4dce, L:/127.0.0.1:59157 ! R:/127.0.0.1:6379]] connected to /127.0.0.1:6379, command: null
+02:06:43.224 [redisson-netty-4-12] DEBUG org.redisson.client.handler.ConnectionWatchdog - RedisConnection@1149144569 [redisClient=[addr=/127.0.0.1:6379], channel=[id: 0x8a19b89c, L:/127.0.0.1:59159 ! R:/127.0.0.1:6379]] connected to /127.0.0.1:6379, command: null
+02:06:43.434 [redisson-netty-4-15] ERROR org.redisson.client.handler.CommandsQueue - Exception occured. Channel: [id: 0xbcce622c, L:/127.0.0.1:59156 - R:/127.0.0.1:6379]
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[?:1.8.0_282]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[?:1.8.0_282]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223) ~[?:1.8.0_282]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192) ~[?:1.8.0_282]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:379) ~[?:1.8.0_282]
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288) ~[netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132) ~[netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:347) ~[netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:677) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:612) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:529) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:491) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:905) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_282]
+02:06:43.434 [redisson-netty-4-11] ERROR org.redisson.client.handler.CommandsQueue - Exception occured. Channel: [id: 0x4d5dea05, L:/127.0.0.1:59155 - R:/127.0.0.1:6379]
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[?:1.8.0_282]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[?:1.8.0_282]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223) ~[?:1.8.0_282]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192) ~[?:1.8.0_282]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:379) ~[?:1.8.0_282]
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288) ~[netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132) ~[netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:347) ~[netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:677) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:612) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:529) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:491) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:905) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_282]
+02:06:43.434 [redisson-netty-4-3] ERROR org.redisson.client.handler.CommandsQueue - Exception occured. Channel: [id: 0x2acec5d3, L:/127.0.0.1:59162 - R:/127.0.0.1:6379]
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[?:1.8.0_282]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[?:1.8.0_282]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223) ~[?:1.8.0_282]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192) ~[?:1.8.0_282]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:379) ~[?:1.8.0_282]
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288) ~[netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132) ~[netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:347) ~[netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:677) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:612) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:529) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:491) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:905) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_282]
+02:06:43.496 [NettyClientSelector_1] INFO  RocketmqRemoting - closeChannel: close the connection to remote address[] result: true
+02:06:43.526 [pool-2-thread-1] DEBUG org.redisson.client.handler.ConnectionWatchdog - reconnecting RedisConnection@329557644 [redisClient=[addr=/127.0.0.1:6379], channel=[id: 0x4d5dea05, L:/127.0.0.1:59155 ! R:/127.0.0.1:6379]] to /127.0.0.1:6379 
+02:06:43.526 [pool-2-thread-1] DEBUG org.redisson.client.handler.ConnectionWatchdog - reconnecting RedisConnection@831547079 [redisClient=[addr=/127.0.0.1:6379], channel=[id: 0xbcce622c, L:/127.0.0.1:59156 ! R:/127.0.0.1:6379]] to /127.0.0.1:6379 
+02:06:43.527 [pool-2-thread-1] DEBUG org.redisson.client.handler.ConnectionWatchdog - reconnecting RedisConnection@1454259970 [redisClient=[addr=/127.0.0.1:6379], channel=[id: 0x2acec5d3, L:/127.0.0.1:59162 ! R:/127.0.0.1:6379]] to /127.0.0.1:6379 
+02:06:43.529 [redisson-netty-4-14] DEBUG org.redisson.client.handler.ConnectionWatchdog - RedisConnection@329557644 [redisClient=[addr=/127.0.0.1:6379], channel=[id: 0x4d5dea05, L:/127.0.0.1:59155 ! R:/127.0.0.1:6379]] connected to /127.0.0.1:6379, command: null
+02:06:43.530 [redisson-netty-4-17] DEBUG org.redisson.client.handler.ConnectionWatchdog - RedisConnection@1454259970 [redisClient=[addr=/127.0.0.1:6379], channel=[id: 0x2acec5d3, L:/127.0.0.1:59162 ! R:/127.0.0.1:6379]] connected to /127.0.0.1:6379, command: null
+02:06:43.531 [redisson-netty-4-16] DEBUG org.redisson.client.handler.ConnectionWatchdog - RedisConnection@831547079 [redisClient=[addr=/127.0.0.1:6379], channel=[id: 0xbcce622c, L:/127.0.0.1:59156 ! R:/127.0.0.1:6379]] connected to /127.0.0.1:6379, command: null
+02:06:43.542 [redisson-netty-4-8] ERROR org.redisson.client.handler.CommandsQueue - Exception occured. Channel: [id: 0xf093fd16, L:/127.0.0.1:59153 - R:/127.0.0.1:6379]
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[?:1.8.0_282]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[?:1.8.0_282]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223) ~[?:1.8.0_282]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192) ~[?:1.8.0_282]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:379) ~[?:1.8.0_282]
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288) ~[netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132) ~[netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:347) ~[netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:677) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:612) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:529) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:491) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:905) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_282]
+02:06:43.542 [redisson-netty-4-9] ERROR org.redisson.client.handler.CommandsQueue - Exception occured. Channel: [id: 0x6bee7ac3, L:/127.0.0.1:59154 - R:/127.0.0.1:6379]
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[?:1.8.0_282]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[?:1.8.0_282]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223) ~[?:1.8.0_282]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192) ~[?:1.8.0_282]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:379) ~[?:1.8.0_282]
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288) ~[netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132) ~[netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:347) ~[netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:677) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:612) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:529) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:491) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:905) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_282]
+02:06:43.620 [pool-2-thread-1] DEBUG org.redisson.client.handler.ConnectionWatchdog - reconnecting RedisConnection@1811352950 [redisClient=[addr=/127.0.0.1:6379], channel=[id: 0xf093fd16, L:/127.0.0.1:59153 ! R:/127.0.0.1:6379]] to /127.0.0.1:6379 
+02:06:43.620 [pool-2-thread-1] DEBUG org.redisson.client.handler.ConnectionWatchdog - reconnecting RedisConnection@1328245733 [redisClient=[addr=/127.0.0.1:6379], channel=[id: 0x6bee7ac3, L:/127.0.0.1:59154 ! R:/127.0.0.1:6379]] to /127.0.0.1:6379 
+02:06:43.622 [redisson-netty-4-22] DEBUG org.redisson.client.handler.ConnectionWatchdog - RedisConnection@1328245733 [redisClient=[addr=/127.0.0.1:6379], channel=[id: 0x6bee7ac3, L:/127.0.0.1:59154 ! R:/127.0.0.1:6379]] connected to /127.0.0.1:6379, command: null
+02:06:43.623 [redisson-netty-4-21] DEBUG org.redisson.client.handler.ConnectionWatchdog - RedisConnection@1811352950 [redisClient=[addr=/127.0.0.1:6379], channel=[id: 0xf093fd16, L:/127.0.0.1:59153 ! R:/127.0.0.1:6379]] connected to /127.0.0.1:6379, command: null
+02:06:43.650 [redisson-netty-4-7] ERROR org.redisson.client.handler.CommandsQueue - Exception occured. Channel: [id: 0x3e43bbc2, L:/127.0.0.1:59152 - R:/127.0.0.1:6379]
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[?:1.8.0_282]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[?:1.8.0_282]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223) ~[?:1.8.0_282]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192) ~[?:1.8.0_282]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:379) ~[?:1.8.0_282]
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288) ~[netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132) ~[netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:347) ~[netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:677) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:612) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:529) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:491) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:905) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) [netty-all-4.1.33.Final.jar:4.1.33.Final]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_282]
+02:06:43.718 [pool-2-thread-1] DEBUG org.redisson.client.handler.ConnectionWatchdog - reconnecting RedisPubSubConnection@1630883789 [redisClient=[addr=/127.0.0.1:6379], channel=[id: 0x3e43bbc2, L:/127.0.0.1:59152 ! R:/127.0.0.1:6379]] to /127.0.0.1:6379 
+02:06:43.720 [redisson-netty-4-1] DEBUG org.redisson.client.handler.ConnectionWatchdog - RedisPubSubConnection@1630883789 [redisClient=[addr=/127.0.0.1:6379], channel=[id: 0x3e43bbc2, L:/127.0.0.1:59152 ! R:/127.0.0.1:6379]] connected to /127.0.0.1:6379, command: null
+02:06:45.663 [NettyClientSelector_1] INFO  RocketmqRemoting - closeChannel: close the connection to remote address[] result: true
+02:06:47.829 [NettyClientSelector_1] INFO  RocketmqRemoting - closeChannel: close the connection to remote address[] result: true
+02:06:50.007 [NettyClientSelector_1] INFO  RocketmqRemoting - closeChannel: close the connection to remote address[] result: true
+02:06:52.151 [NettyClientSelector_1] INFO  RocketmqRemoting - closeChannel: close the connection to remote address[] result: true
+02:06:54.324 [NettyClientSelector_1] INFO  RocketmqRemoting - closeChannel: close the connection to remote address[] result: true
+02:06:54.329 [NettyClientSelector_1] INFO  RocketmqRemoting - closeChannel: close the connection to remote address[] result: true
+02:06:55.040 [NettyClientSelector_1] INFO  RocketmqRemoting - closeChannel: close the connection to remote address[] result: true
+02:06:56.510 [NettyClientSelector_1] INFO  RocketmqRemoting - closeChannel: close the connection to remote address[] result: true
+02:06:57.195 [NettyClientSelector_1] INFO  RocketmqRemoting - closeChannel: close the connection to remote address[] result: true
+02:06:58.664 [NettyClientSelector_1] INFO  RocketmqRemoting - closeChannel: close the connection to remote address[] result: true
+02:07:00.812 [NettyClientSelector_1] INFO  RocketmqRemoting - closeChannel: close the connection to remote address[] result: true
+02:07:02.996 [NettyClientSelector_1] INFO  RocketmqRemoting - closeChannel: close the connection to remote address[] result: true
+02:07:05.168 [NettyClientSelector_1] INFO  RocketmqRemoting - closeChannel: close the connection to remote address[] result: true
+02:07:07.308 [Thread-32] INFO  org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer - container destroyed, DefaultRocketMQListenerContainer{consumerGroup='GID_del_cache', nameServer='101.201.31.118:9876', topic='seckill', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='delCache', messageModel=CLUSTERING}
+02:07:07.308 [NettyClientSelector_1] INFO  RocketmqRemoting - closeChannel: close the connection to remote address[] result: true
+02:07:07.308 [Thread-32] INFO  org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer - container destroyed, DefaultRocketMQListenerContainer{consumerGroup='GID_order', nameServer='101.201.31.118:9876', topic='seckill', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='order', messageModel=CLUSTERING}
+02:07:07.310 [Thread-32] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection manager is shutting down
+02:07:07.310 [Thread-32] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection manager shut down
+02:07:07.348 [NettyClientSelector_1] INFO  RocketmqRemoting - closeChannel: close the connection to remote address[] result: true
+02:07:09.495 [NettyClientSelector_1] INFO  RocketmqRemoting - closeChannel: close the connection to remote address[] result: true
+02:07:09.498 [NettyClientSelector_1] INFO  RocketmqRemoting - closeChannel: close the connection to remote address[101.201.31.118:9876] result: true
+02:07:09.500 [NettyClientWorkerThread_2] DEBUG io.netty.buffer.PoolThreadCache - Freed 29 thread-local buffer(s) from thread: NettyClientWorkerThread_2
+02:07:11.575 [NettyClientWorkerThread_1] DEBUG io.netty.buffer.PoolThreadCache - Freed 1 thread-local buffer(s) from thread: NettyClientWorkerThread_1
+02:07:11.671 [NettyClientSelector_1] INFO  RocketmqRemoting - closeChannel: close the connection to remote address[] result: true
+02:07:11.747 [NettyClientSelector_1] DEBUG io.netty.buffer.PoolThreadCache - Freed 16 thread-local buffer(s) from thread: NettyClientSelector_1
+02:07:13.853 [NettyClientSelector_1] INFO  RocketmqRemoting - closeChannel: close the connection to remote address[] result: true
+02:07:13.855 [NettyClientWorkerThread_1] DEBUG io.netty.buffer.PoolThreadCache - Freed 1 thread-local buffer(s) from thread: NettyClientWorkerThread_1
+02:07:13.855 [NettyClientWorkerThread_2] DEBUG io.netty.buffer.PoolThreadCache - Freed 2 thread-local buffer(s) from thread: NettyClientWorkerThread_2
+02:07:13.870 [redisson-netty-4-3] DEBUG io.netty.buffer.PoolThreadCache - Freed 3 thread-local buffer(s) from thread: redisson-netty-4-3
+02:07:13.870 [redisson-netty-4-2] DEBUG io.netty.buffer.PoolThreadCache - Freed 3 thread-local buffer(s) from thread: redisson-netty-4-2
+02:07:13.870 [redisson-netty-4-4] DEBUG io.netty.buffer.PoolThreadCache - Freed 3 thread-local buffer(s) from thread: redisson-netty-4-4
+02:07:13.870 [redisson-netty-4-6] DEBUG io.netty.buffer.PoolThreadCache - Freed 3 thread-local buffer(s) from thread: redisson-netty-4-6
+02:07:13.870 [redisson-netty-4-10] DEBUG io.netty.buffer.PoolThreadCache - Freed 3 thread-local buffer(s) from thread: redisson-netty-4-10
+02:07:13.870 [redisson-netty-4-11] DEBUG io.netty.buffer.PoolThreadCache - Freed 3 thread-local buffer(s) from thread: redisson-netty-4-11
+02:07:13.870 [redisson-netty-4-13] DEBUG io.netty.buffer.PoolThreadCache - Freed 3 thread-local buffer(s) from thread: redisson-netty-4-13
+02:07:13.870 [redisson-netty-4-15] DEBUG io.netty.buffer.PoolThreadCache - Freed 3 thread-local buffer(s) from thread: redisson-netty-4-15
+02:07:13.871 [redisson-netty-4-18] DEBUG io.netty.buffer.PoolThreadCache - Freed 3 thread-local buffer(s) from thread: redisson-netty-4-18
+02:07:13.871 [redisson-netty-4-19] DEBUG io.netty.buffer.PoolThreadCache - Freed 3 thread-local buffer(s) from thread: redisson-netty-4-19
+02:07:13.871 [redisson-netty-4-20] DEBUG io.netty.buffer.PoolThreadCache - Freed 3 thread-local buffer(s) from thread: redisson-netty-4-20
+02:07:13.871 [redisson-netty-4-23] DEBUG io.netty.buffer.PoolThreadCache - Freed 3 thread-local buffer(s) from thread: redisson-netty-4-23
+02:07:13.871 [redisson-netty-4-24] DEBUG io.netty.buffer.PoolThreadCache - Freed 3 thread-local buffer(s) from thread: redisson-netty-4-24
+02:07:16.074 [NettyClientSelector_1] DEBUG io.netty.buffer.PoolThreadCache - Freed 6 thread-local buffer(s) from thread: NettyClientSelector_1
+02:07:16.089 [redisson-netty-4-16] DEBUG io.netty.buffer.PoolThreadCache - Freed 3 thread-local buffer(s) from thread: redisson-netty-4-16
+02:07:16.089 [redisson-netty-4-17] DEBUG io.netty.buffer.PoolThreadCache - Freed 3 thread-local buffer(s) from thread: redisson-netty-4-17
+02:07:16.089 [redisson-netty-4-22] DEBUG io.netty.buffer.PoolThreadCache - Freed 3 thread-local buffer(s) from thread: redisson-netty-4-22
+02:07:16.089 [redisson-netty-4-14] DEBUG io.netty.buffer.PoolThreadCache - Freed 3 thread-local buffer(s) from thread: redisson-netty-4-14
+02:07:16.090 [redisson-netty-4-1] DEBUG io.netty.buffer.PoolThreadCache - Freed 3 thread-local buffer(s) from thread: redisson-netty-4-1
+02:07:16.090 [redisson-netty-4-21] DEBUG io.netty.buffer.PoolThreadCache - Freed 3 thread-local buffer(s) from thread: redisson-netty-4-21
+02:07:16.090 [redisson-netty-4-9] DEBUG io.netty.buffer.PoolThreadCache - Freed 3 thread-local buffer(s) from thread: redisson-netty-4-9
+02:07:16.090 [redisson-netty-4-8] DEBUG io.netty.buffer.PoolThreadCache - Freed 3 thread-local buffer(s) from thread: redisson-netty-4-8
+02:07:16.090 [redisson-netty-4-7] DEBUG io.netty.buffer.PoolThreadCache - Freed 3 thread-local buffer(s) from thread: redisson-netty-4-7
+02:07:16.090 [redisson-netty-4-12] DEBUG io.netty.buffer.PoolThreadCache - Freed 3 thread-local buffer(s) from thread: redisson-netty-4-12
+02:07:16.090 [redisson-netty-4-5] DEBUG io.netty.buffer.PoolThreadCache - Freed 3 thread-local buffer(s) from thread: redisson-netty-4-5
+02:07:16.094 [Thread-32] DEBUG io.lettuce.core.RedisClient - Initiate shutdown ([100, 100, MILLISECONDS], [100, 100, MILLISECONDS], {})
+02:07:16.095 [Thread-32] DEBUG io.lettuce.core.resource.DefaultEventLoopGroupProvider - Release executor io.netty.channel.nio.NioEventLoopGroup@1c40c732
+02:07:16.096 [lettuce-nioEventLoop-7-1] DEBUG io.netty.buffer.PoolThreadCache - Freed 5 thread-local buffer(s) from thread: lettuce-nioEventLoop-7-1
+02:07:16.096 [lettuce-nioEventLoop-7-2] DEBUG io.netty.buffer.PoolThreadCache - Freed 3 thread-local buffer(s) from thread: lettuce-nioEventLoop-7-2
+02:07:16.096 [lettuce-nioEventLoop-7-3] DEBUG io.netty.buffer.PoolThreadCache - Freed 3 thread-local buffer(s) from thread: lettuce-nioEventLoop-7-3
+02:07:17.204 [lettuce-nioEventLoop-7-4] DEBUG io.netty.buffer.PoolThreadCache - Freed 3 thread-local buffer(s) from thread: lettuce-nioEventLoop-7-4
+02:07:17.206 [Thread-32] DEBUG io.lettuce.core.resource.DefaultClientResources - Initiate shutdown ([0, 2, SECONDS], [0, 2, SECONDS], {})
+02:07:17.207 [Thread-32] DEBUG io.lettuce.core.resource.DefaultEventLoopGroupProvider - Initiate shutdown ([0, 2, SECONDS], [0, 2, SECONDS], {})
